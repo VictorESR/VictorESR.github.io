@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ferieplaner</title> <!-- Title in browser tab -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/green_leaf.png"> <!-- Link to top browser tab icon -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" title="style" /> <!-- Link to our css stylesheet -->
+
+    <!-- JQUERY/Javascript imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jquery libary from google web API -->
+    <script src="Build/UnityLoader.js"></script>
+    <script src="javascript/ferieplaner.js"></script> <!-- Link to our Javascript file  -->
+</head>
+
+</html>
+
+<body> <!-- Visible page content -->
+    <div id="main">
+        <div id="header"> <!-- container for logo and menubar -->
+            <div id="logo"> <!-- top logo -->
+                <div id="logo_text">
+                    <h1><a href="home.html">Et spørgsmål om <span class="logo_colour">Klima</span></a></h1>
+                    <h2> Lærings- og Oplevelsesteknologi, Syddansk Universitet, 3. Semester </h2>
+                </div>
+            </div>
+            <div id="menubar"> <!-- menubar for navigation -->
+                <ul id="menu">
+                    <li class="leftMenuContent yli"><a href="home.html">Home</a></li>
+                    <li class="selected leftMenuContent yli"><a href="ferieplaner.html">Prøv et spørgsmål om klima</a></li>
+                     <li class="leftMenuContent yli"><a href="infoMad.html">Mere info - Mad </a>
+                    </li>
+                    <li class="leftMenuContent yli"><a href="infoTransport.html">Mere info - Transport</a>
+                    </li>
+                    <li class="rightMenuContent yli"><a href="index.html">Log ud</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div id="unityContainer" style="; width: 1280px; height: 720px; margin: auto"></div>
+        </div>
+    </div>
+</body>

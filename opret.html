@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- Type of doc -->
+<html>
+    
+<head> <!-- Page properties and links to external files -->
+    
+    <title>Opret bruger</title> <!-- Title in browser tab -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/green_leaf.png"> <!-- Link to top browser tab icon -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" title="style" /> <!-- Link to our css stylesheet -->
+    <script src="https://kit.fontawesome.com/f7083165bc.js" crossorigin="anonymous"></script> <!-- icons from net -->
+
+    
+    <!-- JQUERY/Javascript imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jquery libary from google web API -->
+    <script src="javascript/notify.min.js" type="text/javascript"></script> <!-- Link to jQuery plugin for easy notification implementation  -->
+    <script src="javascript/opret.js"></script> <!-- Link to our Javascript file  -->
+    
+</head>
+
+<body> <!-- Visible page content -->
+    <div id="main">
+        <div id="header"> <!-- container for logo and menubar -->
+            <div id="logo"> <!-- top logo -->
+                <div id="logo_text">
+                    <h1><a href="home.html">Et spørgsmål om <span class="logo_colour">Klima</span></a></h1>
+                    <h2> Lærings- og Oplevelsesteknologi, Syddansk Universitet, 3. Semester </h2>
+                </div>
+            </div>
+            <div id="menubar"> <!-- menubar for navigation -->
+                <ul id="menu">
+                    <li class="leftMenuContent yli"><a href="home.html">Home</a></li>
+                    <li class="leftMenuContent yli"><a href="ferieplaner.html">Prøv et spørgsmål om klima</a></li>
+                     <li class="leftMenuContent yli"><a href="infoMad.html">Mere info - Mad </a>
+                    </li>
+                    <li class="leftMenuContent yli"><a href="infoTransport.html">Mere info - Transport</a>
+                    </li>
+                    <li class="selected rightMenuContent yli"><a href="index.html">Log ind</a></li>
+                </ul>
+            </div>
+        </div>
+        <div float="center" class="login"> <!-- container for login fields and description -->
+            <h2>Opret en bruger <i class="fas fa-user-edit fa-xs"></i></h2> 
+                <!-- HTML form (possible to send user data input to server) used both in the javascript and the java server, (dosent actually post) -->
+                <h4>Brugernavn</h4>
+                <input id="UsernameField" type="text" title="username" placeholder="username" name="name" class="inputField"/> <!-- input field for username -->
+                <br><br>
+                <h4>Adgangskode</h4>
+                <input id="PasswordField" type="text" title="username" placeholder="password" name="password" class="inputField" /> <!-- input field for password -->
+                <br><br>
+                <input id="createUserFormButton" type="submit" class="logbot yli" value="Opret bruger">  <!-- submit (button) input -->
+                <input id="loginPageButton" type="button" class="logbot yli" value="Login">  <!-- Button used to switch page to the login.html page -->
+        </div>
+    </div>
+</body>
+
+</html>
